@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <style>
+            nav {
+			background-color:  #340dc0;
+			overflow: hidden;
+		}
+		
+		nav a {
+			float:right;
+			color: white;
+			text-align: right;
+			padding: 20px 26px;
+			text-decoration: navy;
+			font-size: 20px;
+        }
+        .slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		.mySlides {
+		  display: none;
+		  width: 100%;
+		  height: 400px;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		}
+</style>
+           
+    </head>
+    <body style="background-color: #7daad3;">
+        <nav >
+            <hi style= "color: blanchedalmond; font-size: xx-large;" ><i><b>AFRICANS MEALS </i></b></hi>
+            <hi><a href="MORE.html"> MORE </a></hi> 
+            <hi><a href="CONTACT US.html"> CONTACT US </a> </hi>
+            <hi><a href="RECIPES.html"> RECIPES </a> </hi>
+            <hi><a href="ABOUT.html"> ABOUT </a> </hi>
+        </nav>
+        <div class="content">
+            <h1>Welcome to African Meals</h1>
+            <p>Here at African Meals, we celebrate the diverse and delicious cuisine of Africa. From the spicy stews of North Africa to the savory rice dishes of West Africa, we showcase the wide range of meals that make up African cuisine. <br>Browse through our collection of recipes.</p>
+      
+            <div class="slideshow-container">
+              <img class="mySlides" src="MEAL 2.jpeg">
+              <img class="mySlides" src="IMG_0494-injera-platter-scaled (1).webp">
+              <img class="mySlides" src="WKcover009.webp">
+              <img class="mySlides" src="img.webp">
+              <img class="mySlides" src="meal.jpg">
+            </div>
+          
+            <script>
+              var slideIndex = 0;
+              showSlides();
+          
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                  slideIndex = 1;
+                }
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+            </script>
+            </head>
+            </html>
+          
+             
+            
+            
+            
+
